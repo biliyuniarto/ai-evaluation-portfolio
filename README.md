@@ -24,6 +24,10 @@ This portfolio demonstrates how I evaluate AI-generated responses using clear cr
 | [Indonesian Localization Review](text-evaluation/indonesian-localization-review.md) | Indonesian phrasing and cultural fit | Fluency, tone, clarity, localization, rewrite judgment |
 | [Conversational Audio Assessment](audio-evaluation/conversational-audio-assessment.md) | Simulated voice-assistant interaction | Intonation, pacing, latency, coherence, error clustering |
 
+## External quality validation
+
+The live portfolio includes a de-identified quality-review excerpt from a completed evaluation assignment. The reviewer rated the work **Exceptional** and specifically validated the rationale as clear, specific, consistent with the model preference, and directly supported by evidence. Personal identifiers, task content, and platform-specific details are excluded.
+
 ## Evaluation framework
 
 - [Evaluation Rubric](frameworks/evaluation-rubric.md)
@@ -51,7 +55,7 @@ For each evaluation, I:
 
 ## Disclosure
 
-All materials in this repository are independent, simulated evaluation samples created specifically for this portfolio. They do not contain confidential client data, platform screenshots, proprietary guidelines, real assessment questions, private model identities, or production task outputs.
+The case studies in this repository are independent, simulated evaluation samples created specifically for this portfolio. The external validation section contains only a cropped, de-identified review excerpt; it excludes confidential client data, proprietary guidelines, assessment questions, private model identities, task content, and production outputs.
 
 ---
 
