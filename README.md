@@ -26,7 +26,9 @@ This portfolio demonstrates how I evaluate AI-generated responses using clear cr
 
 ## External quality validation
 
-The live portfolio includes a de-identified quality-review excerpt from a completed evaluation assignment. The reviewer rated the work **Exceptional** and specifically validated the rationale as clear, specific, consistent with the model preference, and directly supported by evidence. Personal identifiers, task content, and platform-specific details are excluded.
+The live portfolio includes a de-identified quality-review excerpt from a completed evaluation assignment. The reviewer rated the work **Exceptional** and specifically validated the rationale as clear, specific, consistent with the model preference, and directly supported by evidence.
+
+It also includes a de-identified performance summary showing an **average score of 3.18 against a 2.00 target, based on 11 rated reviews**. The score is supporting context—not a substitute for the work samples or evaluation method. Personal identifiers, task content, and platform-specific details are excluded.
 
 ## Evaluation framework
 
