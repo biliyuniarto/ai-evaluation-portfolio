@@ -245,7 +245,7 @@ h1 em { color: var(--orange); font-weight: inherit; }
 .proof-strip strong { font: 500 36px/1 Georgia, serif; color: var(--lime); }
 .proof-strip span { max-width: 120px; font-size: 12px; line-height: 1.45; color: rgba(255,255,255,.72); }
 
-.work, .experience { padding-block: 120px; }
+.work, .validation, .experience { padding-block: 120px; }
 .section-heading { display: grid; grid-template-columns: 1.45fr .55fr; align-items: end; gap: 80px; margin-bottom: 52px; }
 .section-heading h2 { font-size: clamp(44px, 5vw, 72px); line-height: .98; margin-bottom: 0; }
 .section-heading > p { font-size: 16px; line-height: 1.65; color: var(--muted); margin-bottom: 4px; }
@@ -305,6 +305,46 @@ h1 em { color: var(--orange); font-weight: inherit; }
 .case-footer > a { white-space: nowrap; font-size: 13px; font-weight: 800; border-bottom: 1px solid var(--ink); padding-bottom: 4px; }
 .tags { display: flex; flex-wrap: wrap; gap: 7px; }
 .tags span { padding: 7px 10px; border: 1px solid var(--line); border-radius: 999px; font-size: 9px; font-weight: 750; text-transform: uppercase; letter-spacing: .07em; }
+
+.validation { padding-top: 20px; }
+.validation-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(320px, .65fr);
+  gap: 46px;
+  align-items: center;
+  padding: clamp(24px, 4vw, 52px);
+  background: var(--paper-bright);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+.review-capture {
+  min-width: 0;
+  overflow: hidden;
+  background: white;
+  border: 1px solid rgba(11,16,32,.14);
+  border-radius: 16px;
+  box-shadow: 0 18px 50px rgba(11,16,32,.12);
+}
+.review-browser-bar {
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0 14px;
+  background: var(--ink);
+}
+.review-browser-bar > span { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,.34); }
+.review-browser-bar > span:first-child { background: var(--orange); }
+.review-browser-bar small { margin-left: auto; color: rgba(255,255,255,.55); font: 700 9px/1 ui-monospace, monospace; letter-spacing: .1em; text-transform: uppercase; }
+.review-capture img { width: 100%; height: auto; }
+.validation-copy .micro-label { color: var(--muted); margin-bottom: 13px; }
+.validation-copy h3 { font: 500 clamp(29px, 3.2vw, 45px)/1.02 Georgia, "Times New Roman", serif; letter-spacing: -.045em; margin-bottom: 18px; }
+.validation-copy > p:not(.micro-label):not(.validation-note) { color: var(--muted); line-height: 1.62; }
+.validation-copy ul { list-style: none; margin: 25px 0 20px; padding: 0; border-top: 1px solid var(--line); }
+.validation-copy li { display: grid; grid-template-columns: 36px 1fr; gap: 8px; padding: 12px 0; border-bottom: 1px solid var(--line); font-size: 12px; font-weight: 750; }
+.validation-copy li span { color: var(--orange); font: 800 9px/1.5 ui-monospace, monospace; }
+.validation-note { margin-bottom: 0; font: 700 9px/1.45 ui-monospace, monospace; color: var(--muted); letter-spacing: .06em; text-transform: uppercase; }
 
 .method { width: 100%; max-width: none; padding: 120px max(24px, calc((100vw - var(--max)) / 2)); background: var(--ink); color: white; }
 .section-heading.inverse > p { color: rgba(255,255,255,.62); }
@@ -369,7 +409,7 @@ h1 em { color: var(--orange); font-weight: inherit; }
   .method-grid { grid-template-columns: repeat(3, 1fr); }
   .method-grid li:nth-child(n+4) { border-top: 1px solid var(--line-light); }
   .method-grid li:nth-child(4) { border-left: 1px solid var(--line-light); }
-  .framework-panel, .experience-layout { grid-template-columns: 1fr; }
+  .validation-card, .framework-panel, .experience-layout { grid-template-columns: 1fr; }
   .skills-card { transform: none; }
 }
 
@@ -392,7 +432,10 @@ h1 em { color: var(--orange); font-weight: inherit; }
   .proof-strip > div { min-height: 102px; padding: 20px 14px; gap: 12px; }
   .proof-strip strong { font-size: 28px; }
   .proof-strip span { font-size: 10px; }
-  .work, .experience { padding-block: 82px; }
+  .work, .validation, .experience { padding-block: 82px; }
+  .validation { padding-top: 0; }
+  .validation-card { padding: 18px; gap: 30px; }
+  .review-browser-bar { min-height: 34px; }
   .case-grid { grid-template-columns: 1fr; }
   .case-featured { grid-column: auto; }
   .case-visual, .case-featured .case-visual { min-height: 260px; padding: 24px; }
