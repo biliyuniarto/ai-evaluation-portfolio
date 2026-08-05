@@ -10,7 +10,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://biliyuniarto.github.io/ai-evaluation-portfolio/">
   <title>Bili Yuniarto — Indonesian AI Response Evaluator</title>
-  <link rel="stylesheet" href="styles.css?v=20260805-2">
+  <link rel="stylesheet" href="styles.css?v=20260805-3">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -176,13 +176,49 @@
       </div>
 
       <div class="validation-card reveal">
-        <div class="review-capture">
-          <div class="review-browser-bar" aria-hidden="true">
-            <span></span><span></span><span></span>
-            <small>Quality review</small>
-          </div>
-          <img src="assets/external-qa-review-exceptional.svg" alt="External quality review rated Exceptional and praised a clear, specific, evidence-based comparative rationale" width="916" height="174">
+        <div class="validation-evidence" role="group" aria-label="De-identified external quality evidence">
+          <article class="audit-proof">
+            <div class="proof-topline">
+              <span>External quality review</span>
+              <strong><span aria-hidden="true">☆</span> Exceptional</strong>
+            </div>
+            <div class="audit-quote">
+              <p class="micro-label">Auditor comments</p>
+              <blockquote>
+                <p>Rationale is clear and specific: identifies both models unnecessarily reconfirming the speed request before demonstrating it (supporting the Latency flag for both), and explains why MA achieved a noticeably faster speaking speed with more natural transitions and clearer pacing compared to MB, which had slightly more pauses during fast paced sections.</p>
+                <p>Well supported and directly tied to the evidence.</p>
+              </blockquote>
+            </div>
+          </article>
+
+          <aside class="score-proof" aria-label="Average score 3.18 against a target of 2.00, based on 11 rated reviews">
+            <p class="micro-label">Rating distribution</p>
+            <div class="score-main">
+              <div>
+                <span>Your average score</span>
+                <strong>3.18</strong>
+              </div>
+              <div class="score-target">
+                <span>Target</span>
+                <strong>2.00</strong>
+              </div>
+            </div>
+            <p class="score-status"><span aria-hidden="true">✓</span> Meeting target</p>
+            <p class="score-context">Based on 11 rated reviews</p>
+          </aside>
         </div>
+
+        <details class="source-review">
+          <summary>View de-identified source crop</summary>
+          <div class="review-capture">
+            <div class="review-browser-bar" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <small>Quality review</small>
+            </div>
+            <img src="assets/external-qa-review-exceptional.svg" alt="Original de-identified quality review crop rated Exceptional" width="916" height="174">
+          </div>
+        </details>
+
         <div class="validation-copy">
           <p class="micro-label">What the audit confirmed</p>
           <h3>Clear comparison. Specific evidence. Supported preference.</h3>
@@ -192,7 +228,7 @@
             <li><span>02</span>Evidence tied directly to the rationale</li>
             <li><span>03</span>Clear, consistent preference justification</li>
           </ul>
-          <p class="validation-note">Shown with identifying and assignment-specific information excluded.</p>
+          <p class="validation-note">Shown with identifying and assignment-specific information excluded. Score context reflects the submitted rating summary.</p>
         </div>
       </div>
     </section>
